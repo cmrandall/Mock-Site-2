@@ -1,0 +1,340 @@
+        /**********************  
+	         Global Styles
+        **********************/
+html {
+	height:100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	background-color: rgb(130, 116, 111);
+}
+
+li {
+	list-style: none;
+	display: inline;
+}
+
+p,
+form, 
+li > a {
+	color: white;
+}
+
+p, 
+h1,
+h4,
+li > a,
+button,
+form > input,
+.create_account_button,
+.create_account_button_active {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#replaceLogo > h1 {
+    width: 50%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    float: left;
+    color: white;
+}
+
+.form_input:focus {
+	outline: none;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+
+
+
+
+.container-fluid {
+	/*min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 60px;*/
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+
+
+
+        /**********************  
+	         Header Styles
+        **********************/
+
+#header {
+	margin-bottom: 4%;
+	background-color: rgb(0, 66, 141);
+}
+
+#header img {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.header_nav {
+	margin-top: 15px;
+	float: right;
+	font-weight: bold;
+}
+
+.header_nav > ul > li {
+	padding-right: 30px;
+}
+
+        /**********************  
+	        Content Styles
+        **********************/
+
+h1 {
+	margin-bottom: 3%;
+	font-size: 2.8em;
+	color: rgb(191, 186, 183);
+}
+
+h4 {
+	color: rgb(79, 78, 78);
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+        /**********************  
+	        Button Styles
+        **********************/
+
+.media_buttons button {
+	margin-bottom: 1%;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color:  rgb(103, 95, 93);
+	overflow: hidden;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+button > img {
+	height: 35px;
+	width: 35px;
+}
+
+        /**********************  
+	      Sign up form Styles
+        ***********************/
+		
+form {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+}
+
+form > input {
+	width: 100%;
+	margin: 2% 0;
+	padding-top: 2%;
+	padding-left: 9%;
+	background: none;
+	border: none;
+	display: block;
+	border-bottom: 1px solid white;
+	font-size: 1.5em;
+}
+
+#password_confirm {
+	border-bottom: 1px solid rgb(80 , 72 , 69);
+}
+
+
+#email,
+#password,
+#company,
+#password_confirm {
+	background-repeat: no-repeat;	
+	background-size: 7%;
+	background-position: left ; 
+}
+
+#email {
+	background-image: url('../images/@.png');
+}
+
+#password {
+	background-image: url('../images/lightkey.png');
+}
+#password_confirm {
+	background-image: url('../images/darkkey.png');	
+}
+#company {
+	background-image: url('../images/building.png');
+}
+
+::-webkit-input-placeholder {
+	line-height: 1em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	line-height: 1.5em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	line-height: 1.5em;
+}
+
+:-ms-input-placeholder {  
+	line-height: 1.5em;
+}
+
+input[placeholder] {
+	font-size: 1.5em;
+}
+
+        /***************************  
+	    Create Account Button Styles
+        ***************************/
+
+.create_account_button {
+	border-radius: 10px;
+	border: 2px solid rgb(103, 95, 93);
+	background: none;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	color: rgb(103, 95, 93);
+	font-weight: bold;
+	padding: 1%;
+}
+
+#terms {
+	font-size: .7em;
+	font-style: italic;
+	color: rgb(178, 169, 176);
+}
+
+#account {
+	font-size: .8em;
+}
+
+#login {
+	color: white;
+	font-weight: bold;
+}
+
+.push {
+	height: 7em;
+}
+
+        /**********************  
+	         Footer Styles
+        **********************/
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 60px;
+	background:url(../images/footerlogo2.png) no-repeat 99% 50% rgb(103, 95, 93);
+	clear: both;
+	margin: 0 auto;
+}
+
+#footer > ul {
+	text-align: center;
+	vertical-align: center;
+	margin: 17px auto 0 auto;
+}
+
+#footer > ul *  {
+	color: rgb(214, 213, 212);
+	padding: 0 15px 0 0;
+}
+
+        /**********************  
+	         Hover Styles
+        **********************/
+
+.header_nav > ul > li > a:hover {
+	color: rgb(248, 220, 70);
+	text-decoration: none;
+}
+
+	/*    on focus jquery actions  */
+
+	/*  MAKES BUTTON ORANGE AND CHANGES FONT AND BORDER */
+
+.create_account_button_active {
+	background-color: rgb(255, 95, 0);
+	border: 2px solid white;
+	border-radius: 13px;
+	margin-bottom: 1%;
+	font-weight: bold;
+	color: white;
+	padding: 1%;
+}
+
+
+        /**********************  
+	         Modal Styles
+        **********************/
+
+#modal_content {
+	background: rgba(0,0,0,0.9 );
+	border-radius: 15px;
+	max-width: 500px;
+	display: none;
+	padding: 0 10px 10px 10px;
+	position: absolute;
+	width: 80%;
+	z-index: 1002;
+
+}
+
+#modal_content h2,
+#modal_content > div > p {
+	color: white;
+}
+
+#modal_content h2 {
+	font-weight: bold;
+}
+
+#modal_content > div + div {
+	text-align: right;
+}
+
+#modal_content > div > button {
+	border-radius: 5px;
+}
+
+
+@media screen and (max-width:770px) {
+	#footer li {
+		display:block;
+		padding:0;
+	}
+}
+
